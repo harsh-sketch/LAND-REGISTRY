@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Registry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Land Registry</h1>
+        <div class="form-container">
+            <h2>Register Land</h2>
+            <input type="text" id="landLocation" placeholder="Enter Location">
+            <input type="number" id="landAcreage" placeholder="Enter Acreage">
+            <input type="number" id="landPrice" placeholder="Enter Price">
+            <button onclick="registerLand()">Register</button>
+        </div>
+        <div class="form-container">
+            <h2>Check Land Owner</h2>
+            <input type="text" id="checkLandId" placeholder="Enter Land ID">
+            <button onclick="getLandOwner()">Check Owner</button>
+            <p id="ownerAddress"></p>
+        </div>
+        <div class="form-container">
+            <h2>Transfer Ownership</h2>
+            <input type="number" id="transferLandId" placeholder="Enter Land ID">
+            <input type="text" id="newOwnerAddress" placeholder="Enter New Owner Address">
+            <input type="text" id="sellerName" placeholder="Enter Seller Name">
+            <input type="text" id="buyerName" placeholder="Enter Buyer Name">
+            <input type="number" id="paymentAmount" placeholder="Enter Payment Amount">
+            <button onclick="transferOwnership()">Transfer</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
